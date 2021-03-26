@@ -1,0 +1,16 @@
+.SidebarChat {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    padding: 15px;
+    border-bottom: 1px solid #edebe6;
+    cursor: pointer;
+}
+
+.SidebarChat:hover {
+    background-color: #edebe6;
+}
+
+.SidebarChat__info {
+    margin-left: 1vw;
+}

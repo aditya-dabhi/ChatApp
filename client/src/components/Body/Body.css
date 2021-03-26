@@ -1,0 +1,16 @@
+.Body {
+    display: flex;
+    height: 90vh;
+}
+
+.Body__Sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+}
+
+.Body__Chat {
+    display: flex;
+    flex: 1;
+    height: 90vh;
+}

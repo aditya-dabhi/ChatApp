@@ -1,0 +1,53 @@
+.Chat {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Chat__Header {
+    min-height: 9vh;
+    border-bottom: 1px solid #edebe6;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.Chat__Body {
+    height: 100px;
+    flex: 1;
+}
+
+.Chat__Footer {
+    border: 1px solid #a9aaab;
+    border-radius: 20px;
+    margin: 1vw;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.Chat__Footer > form {
+    display: flex;
+    flex: 1;
+}
+
+.Chat__Footer > form > input {
+    height: 5vh;
+    font-size: 20px;
+    flex: 1;
+    border: none;
+    outline-width: 0;
+}
+
+.Chat__Footer > form > button {
+    width: 5vw;
+    padding: 1vh;
+    margin-left: 1vh;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #287ffa;
+    color: white;
+}
