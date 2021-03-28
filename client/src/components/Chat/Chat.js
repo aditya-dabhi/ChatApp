@@ -1,4 +1,5 @@
 import React from 'react'
+import SendIcon from '@material-ui/icons/Send';
 import './Chat.css'
 
 const Chat = () => {
@@ -11,7 +12,7 @@ const Chat = () => {
             <div className="Chat__Footer">
                 <form>
                     <input type="text" placeholder="Type your message here" />
-                    <button>Send</button>
+                    <button><SendIcon /></button>
                 </form>
             </div>
         </div>
