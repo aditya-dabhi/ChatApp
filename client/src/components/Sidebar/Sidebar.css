@@ -3,7 +3,9 @@
     display: flex;
     flex-direction: column;
     height: 90vh;
-    border-right: 1px solid #edebe6;
+    border-right: 1px solid #393c43;
+    background-color: #2f3136;
+    color: white;
 }
 
 .Sidebar__search {
@@ -12,14 +14,15 @@
     align-items: center;
     min-height: 9vh;
     padding: 10px;
-    border-bottom: 1px solid #edebe6;
+    border-bottom: 1px solid #393c43;
 }
 
 .Sidebar__SearchContainer {
     display: flex;
     align-items: center;
     width: 100%;
-    background-color: #edebe6;
+    background-color: #202225;
+    color: white;
     height: 5vh;
     border-radius: 10px;
 }
@@ -35,7 +38,8 @@
     outline-width: 0;
     margin-left: 5px;
     width: 100%;
-    background-color: #edebe6;
+    background-color: #202225;
+    color: white;
 }
 
 .Sidebar__Chat {

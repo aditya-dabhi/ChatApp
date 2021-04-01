@@ -22,7 +22,7 @@ const conversationSchema = mongoose.Schema({
                 default: Date.now
             }
         }
-    ]
+    ],
 })
 
 module.exports = mongoose.model('conversations',conversationSchema)

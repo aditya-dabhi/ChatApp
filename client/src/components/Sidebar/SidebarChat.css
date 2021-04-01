@@ -3,12 +3,14 @@
     align-items: center;
     height: 10vh;
     padding: 15px;
-    border-bottom: 1px solid #edebe6;
+    border-bottom: 1px solid #393c43;
+    color: #72767d;
     cursor: pointer;
 }
 
 .SidebarChat:hover {
-    background-color: #edebe6;
+    background-color: #393c43;
+    color: white;
 }
 
 .SidebarChat__info {

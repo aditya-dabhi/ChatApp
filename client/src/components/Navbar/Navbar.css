@@ -1,8 +1,39 @@
 .Navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 10vh;
     width: 100vw;
-    border-bottom: 1px solid #edebe6;
+    border-bottom: 1px solid #393c43;
+    background-color: #202225;
+    color: white;
+}
+
+.Navbar__Title {
+    display: flex;
+    flex: 0.5;
+    align-items: center;
+    height: 10vh;
+    margin-left: 3vw;
+}
+
+.Navbar__Buttongrp {
+    display: flex;
+    flex: 0.5;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+}
+
+.Navbar__Button {
+    font-size: 16px;
+    height: 6vh;
+    width: 6vw;
+    margin-right: 2vw;
+    padding: 1vh;
+    cursor: pointer;
+    background-color: #287ffa;
+    color: white;
+    border: 0;
+    border-radius: 10px;
 }
