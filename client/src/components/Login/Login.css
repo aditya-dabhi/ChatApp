@@ -1,0 +1,91 @@
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../background.jpg");
+    background-size: cover;
+}
+
+.Login__main {
+    width: 40vw;
+    height: 50vh;
+    color: white;
+    background-color: #2f3136;
+}
+
+.Login__main > h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+.Login__main > p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+.Login__form {
+    margin-top: 2vh;
+    margin-left: 5vw;
+}
+
+.label {
+    margin-top: 2vh;
+}
+
+.label_error {
+    margin-top: 2vh;
+    color: red;
+}
+
+.input {
+    width: 30vw;
+    height: 5vh;
+    font-size: 18px;
+    background-color: #202225;
+    border: 0;
+    outline-width: 0;
+    color: white;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+}
+
+.input_error {
+    width: 30vw;
+    height: 5vh;
+    font-size: 18px;
+    background-color: #202225;
+    border: 1px solid red;
+    outline-width: 0;
+    color: white;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+}
+
+
+.Login__form > form > button {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    width: 30vw;
+    height: 5vh;
+    font-size: 18px;
+    color: white;
+    background-color: #7289da;
+    border: 0;
+    cursor: pointer;
+}
+
+.Login__form > form > button:hover {
+    background-color: #677dc9;
+    transition-duration: 0.4s;
+}
+
+.Login__form > a {
+    color: #677dc9;
+    text-decoration: none;
+}

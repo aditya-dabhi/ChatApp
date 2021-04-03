@@ -18,9 +18,11 @@ const userSchema = mongoose.Schema({
         required: true
     },
     conversations: [
-        {
-            type:mongoose.Schema.Types.ObjectId,
-            ref:'conversations'
+        { 
+            conversation_id: {
+                type:mongoose.Schema.Types.ObjectId,
+                ref:'conversations'
+            }
         }
     ],
 })
