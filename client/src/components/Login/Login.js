@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
+import {useHistory, Link} from 'react-router-dom'
 import './Login.css'
 import axios from '../../axios'
 
 const Login = () => {
-
+    let history = useHistory()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [errors, setErrors] = useState('')
-
     const handleSubmit = (event) => {
         event.preventDefault()
         axios.post('/api/users/login',{
@@ -15,8 +15,8 @@ const Login = () => {
             password: password
         })
         .then(response => {
-            console.log(response)
             localStorage.setItem('token',JSON.stringify(response.data))
+            history.push('/chat')
         })
         .catch(err => setErrors(err.response.data.error))
     }
@@ -34,7 +34,9 @@ const Login = () => {
                         <input className={errors.password ? "input_error" : "input"} type="password" onChange={({ target }) => setPassword(target.value)} /><br />
                         <button>Login</button>
                     </form>
-                    <a href="../Login/Login.js">Need an account? Register</a>
+                    <Link to="/register">
+                        Need an account? Register
+                    </Link>
                 </div>
             </div>
         </div>

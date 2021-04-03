@@ -1,0 +1,67 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../homebackground.jpg");
+    background-size: cover;
+}
+
+.Home__navbar {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    color: white;
+}
+
+.Navbar__logo {
+    display: flex;
+    flex: 0.5;
+    margin-left: 3vw;
+}
+
+.Navbar__right {
+    display: flex;
+    flex: 0.5;
+    justify-content: flex-end;
+}
+
+.Navbar__link {
+    color: white;
+    text-decoration: none;
+    margin-right: 3vw;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+}
+
+.Navbar__link:hover {
+    text-decoration: none;
+    background-color: #d9736f;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.Home__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 20vh;
+    color: white;
+}
+
+.Home__body > h1 {
+    font-size: 66px;
+    margin-bottom: 5vh;
+}
+
+.Home__body > p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.Home__buttongrp {
+    margin-top: 5vh;
+}

@@ -1,17 +1,22 @@
 import './App.css';
-import Body from './components/Body/Body';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Login from './components/Login/Login';
-import Navbar from './components/Navbar/Navbar';
 import Register from './components/Register/Register';
+import Home from './components/Home/Home';
+import Main from './components/Main/Main'
 
 function App() {
   return (
-    <div className="App">
-      {/*<Navbar className="App__Navbar" />
-        <Body className="App__Body" />
-        <Register />*/}
-        <Login />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact component={Home}/>
+          <Route path="/register" component={Register} />
+          <Route path="/login" component={Login} />
+          <Route path="/chat" component={Main} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

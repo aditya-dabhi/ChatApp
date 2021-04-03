@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {useHistory} from 'react-router-dom'
+import {useHistory, Link} from 'react-router-dom'
 import axios from '../../axios'
 import './Register.css'
 
@@ -19,7 +19,7 @@ const Register = () => {
             email: email,
             password: password
         })
-        .then(response => console.log(response))
+        .then(res => history.push('/login'))
         .catch(err => {
             setErrors(err.response.data.error)
         })
@@ -40,7 +40,9 @@ const Register = () => {
                         <input className={errors.password ? "input_error" : "input"} type="password" onChange={({ target }) => setPassword(target.value)} /><br />
                         <button>Register</button>
                     </form>
-                    <a href="../Login/Login.js">Already have an account?</a>
+                    <Link to="/login">
+                        Already have an account?
+                    </Link>
                 </div>
             </div>
         </div>
