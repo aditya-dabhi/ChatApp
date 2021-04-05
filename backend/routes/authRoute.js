@@ -63,7 +63,7 @@ router.post('/login', async (req,res) => {
         return res.status(400).json({error: errors})
     }
     const tokenID = jwt.sign({_id:user._id,name:user.name}, process.env.TOKEN_SECRET)
-    const token = JSON.stringify({tokenID:tokenID, id:user_exists._id})
+    const token = JSON.stringify({tokenID:tokenID, id:user_exists._id, username:user_exists.username})
     res.header('auth-token',tokenID).send(token)
 })
 

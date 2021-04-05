@@ -58,12 +58,13 @@
     color: white;
     background-color: #7289da;
     border: 0;
+    outline-width: 0;
     cursor: pointer;
 }
 
 .Register__form > form > button:hover {
     background-color: #677dc9;
-    transition-duration: 0.4s;
+    transition: all 0.3s ease-in-out;
 }
 
 .Register__form > a {

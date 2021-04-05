@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 import Main from './components/Main/Main'
 
 function App() {
-  return (
+  return(
     <Router>
       <div className="App">
         <Switch>

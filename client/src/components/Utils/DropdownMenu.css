@@ -1,0 +1,66 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    position: absolute;
+    top: 9vh;
+    height: 30vh;
+    width: 25vw;
+    transform: translateX(70vw);
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: #2f3136;
+    border-radius: 20px;
+}
+
+.dropdown-item {
+    display: flex;
+    height: 15vh;
+    border-bottom: 1px solid #393c43;
+    padding: 2vh;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #393c43;
+    transition: all 0.4s ease-in-out;
+}
+
+.dropdown-item-info {
+    margin-left: 1vw;
+}
+
+.dropdown-item-btngrp {
+    margin-top: 2vh;
+}
+
+.dropdown-item-btngrp > button {
+    height: 5vh;
+    width: 5vw;
+    margin-right: 2vw;
+    border: 0;
+    outline-width: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-confirm {
+    background-color: #7289da;
+    color: white;
+}
+
+.btn-confirm:hover {
+    background-color: #677dc9;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-delete {
+    background-color: #46484d;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #27282b;
+    transition: all 0.4s ease-in-out;
+}

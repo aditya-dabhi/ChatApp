@@ -55,3 +55,8 @@
     background-color: #7289da;
     color: white;
 }
+
+.Chat__Footer > form > button:hover{
+    background-color: #677dc9;
+    transition: all 0.4s ease-in-out;
+}

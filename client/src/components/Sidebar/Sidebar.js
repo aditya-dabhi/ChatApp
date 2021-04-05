@@ -15,7 +15,7 @@ const Sidebar = () => {
                 </div>
                 <div className="Sidebar__More">
                     <IconButton>
-                        <MoreVertIcon />
+                        <MoreVertIcon style={{ color: "white" }} />
                     </IconButton>
                 </div>
             </div>

@@ -25,6 +25,15 @@
     height: 10vh;
 }
 
+.Navbar__Buttongrp > p {
+    margin-right: 2vw;
+}
+
+.Navbar__Buttongrp > .MuiSvgIcon-root {
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
 .Navbar__Button {
     font-size: 16px;
     height: 6vh;
@@ -35,5 +44,43 @@
     background-color: #7289da;
     color: white;
     border: 0;
+    outline-width: 0;
     border-radius: 10px;
+}
+
+.Navbar__Button:hover {
+    background-color: #677dc9;
+    transition: all 0.4s ease-in-out;
+}
+
+.Form__AddFriend {
+    display: flex;
+    flex-direction: column;
+    margin: 1vh;
+}
+
+.Form__AddFriend > input {
+    height: 5vh;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    background-color: #202225;
+    color: white;
+    border: 0;
+    outline-width: 0;
+    font-size: 18px;
+}
+
+.Form__AddFriend > button {
+    height: 5vh;
+    font-size: 18px;
+    color: white;
+    background-color: #7289da;
+    border: 0;
+    outline-width: 0;
+    cursor: pointer;
+}
+
+.Form__AddFriend > button:hover {
+    background-color: #677dc9;
+    transition: all 0.4s ease-in-out;
 }

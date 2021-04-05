@@ -10,6 +10,7 @@
 
 .SidebarChat:hover {
     background-color: #393c43;
+    transition: all 0.4s ease-in-out;
     color: white;
 }
 
