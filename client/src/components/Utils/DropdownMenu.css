@@ -4,7 +4,7 @@
     overflow: scroll;
     position: absolute;
     top: 9vh;
-    height: 30vh;
+    max-height: 30vh;
     width: 25vw;
     transform: translateX(70vw);
     overflow: scroll;

@@ -18,13 +18,17 @@ const userSchema = mongoose.Schema({
         required: true
     },
     conversations: [
-        { 
-            conversation_id: {
-                type:mongoose.Schema.Types.ObjectId,
-                ref:'conversations'
-            }
+        {
+            type:mongoose.Schema.Types.ObjectId,
+            ref:'conversations'
         }
     ],
+    request_notification: [
+        {
+                type:mongoose.Schema.Types.ObjectId,
+                ref:'users'
+        }
+    ]
 })
 
 module.exports = mongoose.model('users',userSchema)
